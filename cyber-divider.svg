@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 26" width="1200" height="26" role="img" aria-label="Animated RGB Cyber Divider">
+  <defs>
+    <linearGradient id="divBase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="20%" stop-color="#22D3EE" stop-opacity="0.40" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.75" />
+      <stop offset="80%" stop-color="#10B981" stop-opacity="0.40" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="pulseBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0" />
+      <stop offset="50%" stop-color="#7DD3FC" stop-opacity="1">
+        <animate attributeName="stop-color" values="#7DD3FC;#C4B5FD;#F9A8D4;#6EE7B7;#7DD3FC" dur="7s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
+    </linearGradient>
+    <filter id="dglow"><feGaussianBlur stdDeviation="1.6" result="b" /><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <line x1="40" y1="13" x2="1160" y2="13" stroke="url(#divBase)" stroke-width="1.5" />
+  <rect x="0" y="11.5" width="220" height="3" rx="1.5" fill="url(#pulseBeam)" filter="url(#dglow)">
+    <animate attributeName="x" values="-220;1200" dur="4.4s" repeatCount="indefinite" />
+  </rect>
+  <g transform="translate(600, 13)">
+    <polygon points="0,-7 10,0 0,7 -10,0" fill="#0B162B" stroke="#7DD3FC" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="2.5" fill="#FFFFFF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
