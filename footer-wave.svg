@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" width="1200" height="110" role="img" aria-label="uy-sardar Animated Footer">
+  <defs>
+    <linearGradient id="fBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050D1A" />
+      <stop offset="50%" stop-color="#0B1C36" />
+      <stop offset="100%" stop-color="#050D1A" />
+    </linearGradient>
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.32" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.60" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.32" />
+    </linearGradient>
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#7DD3FC" stop-opacity="0.44" />
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.22" />
+    </linearGradient>
+    <clipPath id="footerClip">
+      <rect width="1200" height="110" rx="14" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#footerClip)">
+    <rect width="1200" height="110" fill="url(#fBg)" />
+    <path d="M0,45 C250,85 450,15 700,50 C950,85 1100,25 1200,45 L1200,110 L0,110 Z" fill="url(#waveGrad1)">
+      <animate attributeName="d" dur="9s" repeatCount="indefinite" values="M0,45 C250,85 450,15 700,50 C950,85 1100,25 1200,45 L1200,110 L0,110 Z; M0,55 C250,15 450,85 700,40 C950,15 1100,75 1200,55 L1200,110 L0,110 Z; M0,45 C250,85 450,15 700,50 C950,85 1100,25 1200,45 L1200,110 L0,110 Z" />
+    </path>
+    <path d="M0,65 C300,25 550,90 850,55 C1050,35 1150,70 1200,60 L1200,110 L0,110 Z" fill="url(#waveGrad2)">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M0,65 C300,25 550,90 850,55 C1050,35 1150,70 1200,60 L1200,110 L0,110 Z; M0,50 C300,90 550,25 850,65 C1050,80 1150,35 1200,50 L1200,110 L0,110 Z; M0,65 C300,25 550,90 850,55 C1050,35 1150,70 1200,60 L1200,110 L0,110 Z" />
+    </path>
+    <rect x="0.75" y="0.75" width="1198.5" height="108.5" rx="13.5" fill="none" stroke="#38BDF8" stroke-opacity="0.32" stroke-width="1.5" />
+    <text x="600" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Consolas, Menlo, monospace" font-size="13.2" font-weight="700" letter-spacing="1.6">
+      SARDAR (سەردار) · CLEAN ARCHITECTURE · ENGINEERED WITH CLARITY &amp; CRAFT
+    </text>
+    <text x="600" y="80" text-anchor="middle" fill="#BAE6FD" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.2">
+      TEMİZ KOD · GÜÇLÜ MİMARİ · MODERN YAZILIM MÜHENDİSLİĞİ
+    </text>
+  </g>
+</svg>
