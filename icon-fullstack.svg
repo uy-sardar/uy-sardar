@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Full-Stack Web Platform Icon">
+  <defs>
+    <linearGradient id="fsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2544" />
+      <stop offset="100%" stop-color="#071121" />
+    </linearGradient>
+    <linearGradient id="fsRgb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#fsBg)" stroke="url(#fsRgb)" stroke-opacity="0.75" stroke-width="1.6" />
+  <rect x="13" y="14" width="38" height="26" rx="4" fill="#06101E" stroke="#38BDF8" stroke-width="1.6" />
+  <circle cx="18" cy="19" r="1.5" fill="#F43F5E" />
+  <circle cx="23" cy="19" r="1.5" fill="#FACC15" />
+  <circle cx="28" cy="19" r="1.5" fill="#10B981" />
+  <path d="M 23 26 L 19 30 L 23 34 M 41 26 L 45 30 L 41 34 M 34 24 L 30 36" fill="none" stroke="url(#fsRgb)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="opacity" values="0.75;1;0.75" dur="2.4s" repeatCount="indefinite" />
+  </path>
+  <text x="32" y="54" text-anchor="middle" fill="#E0F2FE" font-family="Consolas, Menlo, monospace" font-size="8.2" font-weight="700">WEB::STACK</text>
+</svg>
