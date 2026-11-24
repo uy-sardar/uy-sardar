@@ -1,0 +1,445 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Sardar (سەردار) — Animated RGB, Racing Car &amp; Laser Map Banner">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="48%" stop-color="#071326" />
+      <stop offset="100%" stop-color="#041830" />
+    </linearGradient>
+    <radialGradient id="ambientGlowLeft" cx="26%" cy="52%" r="38%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.16" />
+      <stop offset="55%" stop-color="#A855F7" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="ambientGlowRight" cx="77%" cy="50%" r="36%">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <!-- Softened, Slower RGB Spectrum Gradient for Borders & Accents (8.5s cycle) -->
+    <linearGradient id="rgbFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8">
+        <animate attributeName="stop-color" values="#38BDF8;#A855F7;#F43F5E;#F59E0B;#10B981;#38BDF8" dur="8.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#818CF8">
+        <animate attributeName="stop-color" values="#818CF8;#EC4899;#F59E0B;#10B981;#22D3EE;#818CF8" dur="8.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#34D399">
+        <animate attributeName="stop-color" values="#34D399;#38BDF8;#A855F7;#F43F5E;#F59E0B;#34D399" dur="8.5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <!-- High-Clarity Bright Pastel RGB Gradient Strictly for Sharp Readable Text (8.5s cycle) -->
+    <linearGradient id="rgbTextClear" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7DD3FC">
+        <animate attributeName="stop-color" values="#7DD3FC;#C4B5FD;#F9A8D4;#FDE68A;#6EE7B7;#7DD3FC" dur="8.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#A5F3FC">
+        <animate attributeName="stop-color" values="#A5F3FC;#F9A8D4;#FDE68A;#6EE7B7;#C4B5FD;#A5F3FC" dur="8.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#6EE7B7">
+        <animate attributeName="stop-color" values="#6EE7B7;#7DD3FC;#C4B5FD;#F9A8D4;#FDE68A;#6EE7B7" dur="8.5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <linearGradient id="mapBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.92" />
+      <stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.86" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.94" />
+    </linearGradient>
+    <linearGradient id="laserBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#E0F2FE" stop-opacity="0.58" />
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
+    </linearGradient>
+    <!-- Subtle Glow (stdDeviation reduced from 3.5 to 1.6 so nothing looks blurry) -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#020617" flood-opacity="0.95" />
+    </filter>
+    <pattern id="techGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#38BDF8" stroke-opacity="0.07" stroke-width="0.9" />
+      <circle cx="0" cy="0" r="1" fill="#38BDF8" fill-opacity="0.16" />
+    </pattern>
+    <pattern id="mapTopo" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#E0F2FE" stroke-opacity="0.15" stroke-width="0.6" />
+    </pattern>
+    <clipPath id="mapClip">
+      <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" />
+    </clipPath>
+    <clipPath id="canvasClip">
+      <rect width="1200" height="400" rx="18" />
+    </clipPath>
+    <!-- Letter-by-letter Typewriter Stream Clip Paths -->
+    <clipPath id="streamNameClip">
+      <rect x="24" y="48" width="540" height="54">
+        <animate attributeName="width" values="0;540;540;0" keyTimes="0;0.22;0.93;1" dur="9.5s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    <clipPath id="streamRoleEnClip">
+      <rect x="24" y="102" width="540" height="30">
+        <animate attributeName="width" values="0;0;540;540;0" keyTimes="0;0.14;0.42;0.93;1" dur="9.5s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    <clipPath id="streamRoleTrClip">
+      <rect x="24" y="130" width="540" height="26">
+        <animate attributeName="width" values="0;0;540;540;0" keyTimes="0;0.24;0.54;0.93;1" dur="9.5s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    <clipPath id="streamIntro1Clip">
+      <rect x="34" y="182" width="515" height="24">
+        <animate attributeName="width" values="0;0;515;515;0" keyTimes="0;0.32;0.68;0.93;1" dur="9.5s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    <clipPath id="streamIntro2Clip">
+      <rect x="34" y="206" width="515" height="24">
+        <animate attributeName="width" values="0;0;515;515;0" keyTimes="0;0.44;0.78;0.93;1" dur="9.5s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    <!-- Orbiting Track for the RGB Formula/Supercar Racing Car -->
+    <path id="raceCarOrbitTrack" d="M 80 374 C 360 390, 840 390, 1120 374 C 1172 365, 1172 34, 1120 24 C 840 12, 360 12, 80 24 C 28 34, 28 365, 80 374 Z" />
+  </defs>
+  <style>
+    @keyframes floatMap {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes borderTrace {
+      0% { stroke-dashoffset: 1600; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes circuitFlow {
+      0% { stroke-dashoffset: 260; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.45; }
+      50% { opacity: 0.85; }
+    }
+    @keyframes nitroPulse {
+      0%, 100% { transform: scaleX(1); opacity: 0.9; }
+      50% { transform: scaleX(1.35); opacity: 1; }
+    }
+    .float-map { animation: floatMap 6.2s ease-in-out infinite; }
+    .map-trace {
+      stroke-dasharray: 210 1390;
+      animation: borderTrace 6.5s linear infinite;
+    }
+    .circuit-pulse {
+      stroke-dasharray: 34 226;
+      animation: circuitFlow 4.2s linear infinite;
+    }
+    .pulse-soft { animation: pulseGlow 4s ease-in-out infinite; }
+    .nitro-flame { transform-origin: -24px 1px; animation: nitroPulse 0.18s ease-in-out infinite; }
+  </style>
+  <g clip-path="url(#canvasClip)">
+    <rect width="1200" height="400" fill="url(#bgGrad)" />
+    <rect width="1200" height="400" fill="url(#ambientGlowLeft)" class="pulse-soft" />
+    <rect width="1200" height="400" fill="url(#ambientGlowRight)" class="pulse-soft" />
+
+    <!-- Animated Scrolling Tech Grid -->
+    <g>
+      <rect x="-36" y="-36" width="1272" height="472" fill="url(#techGrid)" />
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="36 36" dur="12s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Outer HUD Frame & Softened RGB Top/Bottom Spectrum Bars -->
+    <rect x="1.5" y="1.5" width="1197" height="397" rx="17" fill="none" stroke="url(#rgbFlow)" stroke-opacity="0.55" stroke-width="1.6" />
+    <rect x="60" y="0" width="1080" height="2.5" fill="url(#rgbFlow)" />
+    <rect x="60" y="397.5" width="1080" height="2.5" fill="url(#rgbFlow)" />
+
+    <!-- Top Header Strip -->
+    <g transform="translate(42, 30)">
+      <circle cx="6" cy="0" r="3.8" fill="#10B981">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite" />
+      </circle>
+      <text x="20" y="4" fill="#CBD5E1" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.4">
+        NODE::UY-SARDAR · EAST TURKISTAN (DOĞU TÜRKİSTAN)
+      </text>
+      <text x="1116" y="4" text-anchor="end" fill="#7DD3FC" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.4">
+        43.8256° N, 87.6168° E
+      </text>
+    </g>
+
+    <!-- Live Laser Circuit Bridges Connecting Identity Showcase -> Large Map -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M 624 145 L 664 145 L 682 162 L 714 162" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.5" />
+      <path d="M 624 145 L 664 145 L 682 162 L 714 162" stroke="url(#rgbFlow)" stroke-width="2.2" class="circuit-pulse" />
+      <path d="M 624 255 L 664 255 L 682 238 L 714 238" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.5" />
+      <path d="M 624 255 L 664 255 L 682 238 L 714 238" stroke="url(#rgbFlow)" stroke-width="2.2" class="circuit-pulse" />
+    </g>
+
+    <!-- LEFT & CENTER PANEL: Crisp, High-Clarity Executive Identity Card -->
+    <g transform="translate(42, 54)">
+      <rect x="0" y="0" width="582" height="306" rx="16" fill="#061020" fill-opacity="0.90" stroke="url(#rgbFlow)" stroke-opacity="0.60" stroke-width="1.5" />
+
+      <!-- Top Handle Pill (Sharp text, no blur) -->
+      <rect x="24" y="18" width="248" height="28" rx="14" fill="#030914" stroke="url(#rgbFlow)" stroke-opacity="0.75" stroke-width="1.2" />
+      <text x="148" y="36" text-anchor="middle" fill="url(#rgbTextClear)" font-family="Consolas, Menlo, monospace" font-size="12.5" font-weight="700" letter-spacing="1.1">
+        &gt;_ @uy-sardar · ARCHITECT
+      </text>
+
+      <!-- Display Name: CRISP PURE WHITE (#FFFFFF) with Letter-by-Letter Streaming Reveal -->
+      <g clip-path="url(#streamNameClip)">
+        <text x="26" y="88" fill="#FFFFFF" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="900" letter-spacing="0.6" filter="url(#textShadow)">
+          Sardar
+        </text>
+        <text x="184" y="88" fill="#FFFFFF" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, Arial, sans-serif" font-size="38" font-weight="800" filter="url(#textShadow)">
+          · سەردار
+        </text>
+      </g>
+
+      <!-- Streaming Role Titles (Crisp White & Soft RGB without blur) -->
+      <g clip-path="url(#streamRoleEnClip)">
+        <text x="26" y="122" fill="#F8FAFC" font-family="'Segoe UI', Arial, sans-serif" font-size="18.5" font-weight="700">
+          Senior Systems &amp; AI Engineer
+        </text>
+      </g>
+      <g clip-path="url(#streamRoleTrClip)">
+        <text x="26" y="146" fill="url(#rgbTextClear)" font-family="'Segoe UI', Arial, sans-serif" font-size="14.5" font-weight="700">
+          Kıdemli Sistem ve Yapay Zeka Mühendisi
+        </text>
+      </g>
+
+      <!-- Animated RGB Spectrum Laser Line -->
+      <line x1="26" y1="164" x2="556" y2="164" stroke="#1E293B" stroke-width="1.5" />
+      <rect x="26" y="162.5" width="180" height="3" rx="1.5" fill="url(#rgbFlow)">
+        <animate attributeName="x" values="26;376;26" dur="5.2s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- High-Contrast RGB Short Intro Lines (Zero blur filter, sharp monospace letters) -->
+      <rect x="26" y="178" width="530" height="54" rx="10" fill="#030812" stroke="url(#rgbFlow)" stroke-opacity="0.45" stroke-width="1.1" />
+      <g clip-path="url(#streamIntro1Clip)">
+        <text x="38" y="200" fill="url(#rgbTextClear)" font-family="Consolas, Menlo, monospace" font-size="11.4" font-weight="700" letter-spacing="0.6">
+          ★ CRAFTING SCALABLE WEB PLATFORMS · CLOUD APIS · INTELLIGENT DEVELOPER TOOLS
+        </text>
+      </g>
+      <g clip-path="url(#streamIntro2Clip)">
+        <text x="38" y="220" fill="#E2E8F0" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="0.5">
+          ✦ MODERN WEB SİSTEMLERİ · BULUT MİMARİSİ · AKILLI YAZILIM ÇÖZÜMLERİ
+        </text>
+      </g>
+
+      <!-- Clean Architectural Subtitles -->
+      <text x="26" y="252" fill="#E2E8F0" font-family="'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="600">
+        TypeScript &amp; Python · Cloud-Native Backend · Modern UI Engineering · Temiz Mimari · Yüksek Performanslı Sistemler · Modern Ürün Geliştirme
+      </text>
+
+      <!-- 4 Crisp Tech Stack Badges -->
+      <g transform="translate(26, 266)">
+        <rect x="0" y="0" width="122" height="24" rx="6" fill="#091D36" stroke="url(#rgbFlow)" stroke-opacity="0.75" stroke-width="1.1" />
+        <text x="61" y="15.5" text-anchor="middle" fill="#FFFFFF" font-family="Consolas, Menlo, monospace" font-size="10.5" font-weight="700">FULL-STACK</text>
+
+        <rect x="134" y="0" width="122" height="24" rx="6" fill="#091D36" stroke="url(#rgbFlow)" stroke-opacity="0.75" stroke-width="1.1" />
+        <text x="195" y="15.5" text-anchor="middle" fill="#FFFFFF" font-family="Consolas, Menlo, monospace" font-size="10.5" font-weight="700">CLOUD &amp; API</text>
+
+        <rect x="268" y="0" width="122" height="24" rx="6" fill="#091D36" stroke="url(#rgbFlow)" stroke-opacity="0.75" stroke-width="1.1" />
+        <text x="329" y="15.5" text-anchor="middle" fill="#FFFFFF" font-family="Consolas, Menlo, monospace" font-size="10.5" font-weight="700">AI TOOLING</text>
+
+        <rect x="402" y="0" width="128" height="24" rx="6" fill="#091D36" stroke="url(#rgbFlow)" stroke-opacity="0.75" stroke-width="1.1" />
+        <text x="466" y="15.5" text-anchor="middle" fill="#FFFFFF" font-family="Consolas, Menlo, monospace" font-size="10.5" font-weight="700">DEVOPS</text>
+      </g>
+    </g>
+
+    <!-- RIGHT PANEL: Enlarged Animated Laser Holographic East Turkistan Flag-Map with Major Cities -->
+    <g transform="translate(688, 36) scale(1.22)">
+      <g class="float-map">
+        <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="#0EA5E9" opacity="0.22" filter="url(#softGlow)" />
+        <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="url(#mapBlue)" stroke="#BAE6FD" stroke-width="2" stroke-linejoin="round" />
+
+        <g clip-path="url(#mapClip)">
+          <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="url(#mapTopo)" />
+          <g transform="translate(168, 172) scale(0.95)" opacity="0.30">
+            <path d="M 32 -40 A 48 48 0 1 0 32 40 A 38 38 0 1 1 32 -40 Z" fill="#FFFFFF" />
+            <polygon points="68,0 50,6 51,25 39,10 21,16 32,0 21,-16 39,-10 51,-25 50,-6" fill="#FFFFFF" />
+          </g>
+          <rect x="0" y="-60" width="370" height="58" fill="url(#laserBeam)" opacity="0.80">
+            <animate attributeName="y" values="-60;310" dur="4s" repeatCount="indefinite" />
+          </rect>
+        </g>
+
+        <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="none" stroke="url(#rgbFlow)" stroke-width="3" stroke-linejoin="round" class="map-trace" />
+
+        <g stroke="#E0F2FE" stroke-width="1" stroke-opacity="0.50" stroke-dasharray="3 3">
+          <line x1="215" y1="108" x2="124" y2="88" />
+          <line x1="215" y1="108" x2="224" y2="34" />
+          <line x1="215" y1="108" x2="248" y2="122" />
+          <line x1="248" y1="122" x2="306" y2="132" />
+          <line x1="215" y1="108" x2="205" y2="148" />
+          <line x1="205" y1="148" x2="112" y2="156" />
+          <line x1="112" y1="156" x2="46" y2="186" />
+          <line x1="46" y1="186" x2="112" y2="238" />
+          <line x1="112" y1="238" x2="205" y2="148" />
+        </g>
+
+        <g transform="translate(215, 108)">
+          <circle r="4.2" fill="#FACC15" />
+          <circle r="4.2" fill="none" stroke="#FDE047" stroke-width="1.3">
+            <animate attributeName="r" values="4.2;18" dur="2.8s" begin="0.0s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="0.0s" repeatCount="indefinite" />
+          </circle>
+          <text x="10" y="-8" text-anchor="start" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" filter="url(#textShadow)">
+            Ürümqi
+          </text>
+          <text x="10" y="2.5" text-anchor="start" fill="#FEF08A" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="8.8" font-weight="600" filter="url(#textShadow)">
+            ئۈرۈمچى
+          </text>
+        </g>
+        <g transform="translate(46, 186)">
+          <circle r="3" fill="#FFFFFF" />
+          <circle r="3" fill="none" stroke="#7DD3FC" stroke-width="1.3">
+            <animate attributeName="r" values="3;13" dur="2.8s" begin="0.4s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="0.4s" repeatCount="indefinite" />
+          </circle>
+          <text x="10" y="-6" text-anchor="start" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="9.2" font-weight="700" filter="url(#textShadow)">
+            Kashgar
+          </text>
+          <text x="10" y="4.5" text-anchor="start" fill="#E0F2FE" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="8.8" font-weight="600" filter="url(#textShadow)">
+            قەشقەر
+          </text>
+        </g>
+        <g transform="translate(124, 88)">
+          <circle r="3" fill="#FFFFFF" />
+          <circle r="3" fill="none" stroke="#7DD3FC" stroke-width="1.3">
+            <animate attributeName="r" values="3;13" dur="2.8s" begin="0.8s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="0.8s" repeatCount="indefinite" />
+          </circle>
+          <text x="-8" y="-10" text-anchor="end" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="9.2" font-weight="700" filter="url(#textShadow)">
+            Ghulja
+          </text>
+          <text x="-8" y="0.5" text-anchor="end" fill="#E0F2FE" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="8.8" font-weight="600" filter="url(#textShadow)">
+            غۇلجا
+          </text>
+        </g>
+        <g transform="translate(112, 238)">
+          <circle r="3" fill="#FFFFFF" />
+          <circle r="3" fill="none" stroke="#7DD3FC" stroke-width="1.3">
+            <animate attributeName="r" values="3;13" dur="2.8s" begin="1.2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="1.2s" repeatCount="indefinite" />
+          </circle>
+          <text x="10" y="12" text-anchor="start" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="9.2" font-weight="700" filter="url(#textShadow)">
+            Hotan
+          </text>
+          <text x="10" y="22.5" text-anchor="start" fill="#E0F2FE" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="8.8" font-weight="600" filter="url(#textShadow)">
+            خوتەن
+          </text>
+        </g>
+        <g transform="translate(112, 156)">
+          <circle r="3" fill="#FFFFFF" />
+          <circle r="3" fill="none" stroke="#7DD3FC" stroke-width="1.3">
+            <animate attributeName="r" values="3;13" dur="2.8s" begin="1.6s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="1.6s" repeatCount="indefinite" />
+          </circle>
+          <text x="-8" y="-8" text-anchor="end" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="9.2" font-weight="700" filter="url(#textShadow)">
+            Aksu
+          </text>
+          <text x="-8" y="2.5" text-anchor="end" fill="#E0F2FE" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="8.8" font-weight="600" filter="url(#textShadow)">
+            ئاقسۇ
+          </text>
+        </g>
+        <g transform="translate(205, 148)">
+          <circle r="3" fill="#FFFFFF" />
+          <circle r="3" fill="none" stroke="#7DD3FC" stroke-width="1.3">
+            <animate attributeName="r" values="3;13" dur="2.8s" begin="2.0s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="2.0s" repeatCount="indefinite" />
+          </circle>
+          <text x="10" y="12" text-anchor="start" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="9.2" font-weight="700" filter="url(#textShadow)">
+            Korla
+          </text>
+          <text x="10" y="22.5" text-anchor="start" fill="#E0F2FE" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="8.8" font-weight="600" filter="url(#textShadow)">
+            كورلا
+          </text>
+        </g>
+        <g transform="translate(248, 122)">
+          <circle r="3" fill="#FFFFFF" />
+          <circle r="3" fill="none" stroke="#7DD3FC" stroke-width="1.3">
+            <animate attributeName="r" values="3;13" dur="2.8s" begin="2.4s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="2.4s" repeatCount="indefinite" />
+          </circle>
+          <text x="10" y="-5" text-anchor="start" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="9.2" font-weight="700" filter="url(#textShadow)">
+            Turpan
+          </text>
+          <text x="10" y="5.5" text-anchor="start" fill="#E0F2FE" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="8.8" font-weight="600" filter="url(#textShadow)">
+            تۇرپان
+          </text>
+        </g>
+        <g transform="translate(306, 132)">
+          <circle r="3" fill="#FFFFFF" />
+          <circle r="3" fill="none" stroke="#7DD3FC" stroke-width="1.3">
+            <animate attributeName="r" values="3;13" dur="2.8s" begin="2.8s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="2.8s" repeatCount="indefinite" />
+          </circle>
+          <text x="-12" y="-10" text-anchor="end" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="9.2" font-weight="700" filter="url(#textShadow)">
+            Kumul
+          </text>
+          <text x="-12" y="0.5" text-anchor="end" fill="#E0F2FE" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="8.8" font-weight="600" filter="url(#textShadow)">
+            قۇمۇل
+          </text>
+        </g>
+        <g transform="translate(224, 34)">
+          <circle r="3" fill="#FFFFFF" />
+          <circle r="3" fill="none" stroke="#7DD3FC" stroke-width="1.3">
+            <animate attributeName="r" values="3;13" dur="2.8s" begin="3.2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="3.2s" repeatCount="indefinite" />
+          </circle>
+          <text x="10" y="4" text-anchor="start" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="9.2" font-weight="700" filter="url(#textShadow)">
+            Altay
+          </text>
+          <text x="10" y="14.5" text-anchor="start" fill="#E0F2FE" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="8.8" font-weight="600" filter="url(#textShadow)">
+            ئالتاي
+          </text>
+        </g>
+      </g>
+    </g>
+
+    <!-- ANIMATED RGB RACING SUPERCAR ORBITING AROUND THE BANNER -->
+    <g filter="url(#neonGlow)">
+      <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#raceCarOrbitTrack" />
+      </animateMotion>
+      <g transform="scale(0.95)">
+        <!-- Twin Nitro Exhaust Afterburner Flames -->
+        <g class="nitro-flame">
+          <polygon points="-24,-2 -44,-5 -36,0 -46,4 -24,3" fill="url(#rgbFlow)" opacity="0.95" />
+          <polygon points="-24,-1 -35,-2 -24,2" fill="#FFFFFF" />
+        </g>
+        <!-- Speed Slipstream Lines -->
+        <line x1="-28" y1="-6" x2="-48" y2="-6" stroke="#7DD3FC" stroke-width="1.3" stroke-linecap="round" opacity="0.75">
+          <animate attributeName="x2" values="-38;-56;-38" dur="0.35s" repeatCount="indefinite" />
+        </line>
+        <line x1="-28" y1="7" x2="-45" y2="7" stroke="#C4B5FD" stroke-width="1.3" stroke-linecap="round" opacity="0.75">
+          <animate attributeName="x2" values="-35;-52;-35" dur="0.4s" repeatCount="indefinite" />
+        </line>
+        <!-- Rear Carbon Spoiler Wing -->
+        <path d="M -23 -3 L -27 -11 L -20 -11 L -18 -3 Z" fill="#0F172A" stroke="url(#rgbFlow)" stroke-width="1.3" />
+        <!-- Aerodynamic Supercar / Formula Chassis -->
+        <path
+          d="M -23 3 L -23 -3 L -15 -4 L -6 -10 L 8 -10 L 17 -4 L 28 -2 L 31 2 L 26 5 L -21 5 Z"
+          fill="url(#rgbFlow)"
+          stroke="#FFFFFF"
+          stroke-width="0.9"
+        />
+        <!-- Tinted Cockpit Canopy & Side Air Intake -->
+        <path d="M -4 -8.5 L 7 -8.5 L 14 -3.5 L -8 -3.5 Z" fill="#040D1A" stroke="#BAE6FD" stroke-width="0.9" />
+        <polygon points="-4,0 6,-2 5,3 -4,3" fill="#040D1A" opacity="0.8" />
+        <!-- High-Intensity LED Laser Headlight Beam -->
+        <polygon points="30,0 56,-6 56,5" fill="#E0F2FE" opacity="0.45" />
+        <circle cx="29" cy="0.5" r="1.6" fill="#FFFFFF" />
+        <!-- Rear & Front Racing Wheels with Neon Rims -->
+        <circle cx="-13" cy="5" r="4.8" fill="#030712" stroke="#FFFFFF" stroke-width="1.4" />
+        <circle cx="-13" cy="5" r="2" fill="url(#rgbFlow)" />
+        <circle cx="17" cy="5" r="4.8" fill="#030712" stroke="#FFFFFF" stroke-width="1.4" />
+        <circle cx="17" cy="5" r="2" fill="url(#rgbFlow)" />
+      </g>
+    </g>
+  </g>
+</svg>
