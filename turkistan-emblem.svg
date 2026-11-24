@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="340" height="340" role="img" aria-label="uy-sardar Animated Developer Emblem">
+  <defs>
+    <radialGradient id="coreBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#0E294B" />
+      <stop offset="68%" stop-color="#081426" />
+      <stop offset="100%" stop-color="#040914" />
+    </radialGradient>
+    <linearGradient id="ringCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8">
+        <animate attributeName="stop-color" values="#38BDF8;#A855F7;#F43F5E;#10B981;#38BDF8" dur="8.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#0EA5E9">
+        <animate attributeName="stop-color" values="#0EA5E9;#EC4899;#F59E0B;#22D3EE;#0EA5E9" dur="8.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#10B981">
+        <animate attributeName="stop-color" values="#10B981;#38BDF8;#F43F5E;#A855F7;#10B981" dur="8.5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <linearGradient id="emblemMapBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="lensScan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#BAE6FD" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.0" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <clipPath id="innerCircleClip">
+      <circle cx="170" cy="170" r="134" />
+    </clipPath>
+  </defs>
+  <style>
+    @keyframes mapPulse { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
+    @keyframes traceRing { 0% { stroke-dashoffset: 1600; } 100% { stroke-dashoffset: 0; } }
+    @keyframes bracketPulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+    .float-core { animation: mapPulse 4.5s ease-in-out infinite; }
+    .trace-border { stroke-dasharray: 180 1420; animation: traceRing 6.5s linear infinite; }
+    .bracket { animation: bracketPulse 3.2s ease-in-out infinite; }
+  </style>
+  <circle cx="170" cy="170" r="156" fill="url(#coreBg)" stroke="url(#ringCyan)" stroke-width="4.2" />
+  <g>
+    <circle cx="170" cy="170" r="146" fill="none" stroke="#38BDF8" stroke-opacity="0.42" stroke-width="2" stroke-dasharray="10 8 2 8" />
+    <animateTransform attributeName="transform" type="rotate" from="0 170 170" to="360 170 170" dur="30s" repeatCount="indefinite" />
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="170" cy="170" r="137" fill="none" stroke="url(#ringCyan)" stroke-opacity="0.8" stroke-width="2.4" stroke-dasharray="55 160 35 160" stroke-linecap="round" />
+    <animateTransform attributeName="transform" type="rotate" from="360 170 170" to="0 170 170" dur="16s" repeatCount="indefinite" />
+  </g>
+  <g>
+    <circle cx="170" cy="24" r="4.2" fill="#E0F2FE" filter="url(#glow)" />
+    <animateTransform attributeName="transform" type="rotate" from="0 170 170" to="360 170 170" dur="10s" repeatCount="indefinite" />
+  </g>
+  <g clip-path="url(#innerCircleClip)">
+    <line x1="170" y1="36" x2="170" y2="304" stroke="#38BDF8" stroke-opacity="0.1" stroke-width="1" />
+    <line x1="36" y1="170" x2="304" y2="170" stroke="#38BDF8" stroke-opacity="0.1" stroke-width="1" />
+    <rect x="30" y="20" width="280" height="44" fill="url(#lensScan)">
+      <animate attributeName="y" values="20;280;20" dur="5.2s" repeatCount="indefinite" />
+    </rect>
+    <g transform="translate(65, 80) scale(0.58)">
+      <g class="float-core">
+        <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="url(#emblemMapBlue)" stroke="#BAE6FD" stroke-width="3.2" stroke-linejoin="round" />
+        <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linejoin="round" class="trace-border" filter="url(#glow)" />
+        <g transform="translate(178, 174)" filter="url(#glow)">
+          <path d="M 32 -40 A 48 48 0 1 0 32 40 A 38 38 0 1 1 32 -40 Z" fill="#FFFFFF" />
+          <polygon points="68,0 50,6 51,25 39,10 21,16 32,0 21,-16 39,-10 51,-25 50,-6" fill="#FFFFFF" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <text x="42" y="178" fill="#7DD3FC" font-family="Consolas, Menlo, monospace" font-size="22" font-weight="800" class="bracket">&lt;</text>
+  <text x="274" y="178" fill="#7DD3FC" font-family="Consolas, Menlo, monospace" font-size="22" font-weight="800" class="bracket">/&gt;</text>
+  <rect x="70" y="262" width="200" height="26" rx="13" fill="#071529" stroke="url(#ringCyan)" stroke-opacity="0.85" stroke-width="1.4" />
+  <text x="170" y="279.5" text-anchor="middle" fill="#FFFFFF" font-family="Consolas, Menlo, monospace" font-size="13" font-weight="800" letter-spacing="1.1">
+    @uy-sardar · سەردار
+  </text>
+</svg>
