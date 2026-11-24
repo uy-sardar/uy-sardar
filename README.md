@@ -3,7 +3,9 @@
 </p>
 
 <p align="center">
-  <img src="./turkistan-emblem.svg" alt="Sardar — Animated Gyro-HUD Developer Emblem" width="128" height="128" />
+  <img src="./sardar-hacker-avatar.svg" alt="Sardar (سەردار) — Cyber-Hacker GitHub Avatar" width="144" height="144" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./turkistan-emblem.svg" alt="Sardar — Animated Gyro-HUD Developer Emblem" width="144" height="144" />
 </p>
 
 <p align="center">
