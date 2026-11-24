@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="AI and Smart Automation Icon">
+  <defs>
+    <linearGradient id="aiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2A3C" />
+      <stop offset="100%" stop-color="#071121" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#aiBg)" stroke="#A855F7" stroke-opacity="0.65" stroke-width="1.6" />
+  <g>
+    <circle cx="32" cy="28" r="18" fill="none" stroke="#22D3EE" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 6" />
+    <animateTransform attributeName="transform" type="rotate" from="360 32 28" to="0 32 28" dur="14s" repeatCount="indefinite" />
+  </g>
+  <path d="M 32 12 Q 34 25 47 28 Q 34 31 32 44 Q 30 31 17 28 Q 30 25 32 12 Z" fill="#38BDF8">
+    <animate attributeName="opacity" values="0.78;1;0.78" dur="2.6s" repeatCount="indefinite" />
+  </path>
+  <circle cx="32" cy="28" r="3.5" fill="#FFFFFF" />
+  <text x="32" y="55" text-anchor="middle" fill="#F3E8FF" font-family="Consolas, Menlo, monospace" font-size="8.2" font-weight="700">AI::AGENT</text>
+</svg>
